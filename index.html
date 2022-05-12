@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","name":"Vocabulario para la representación del Alumbrado Público", "headline":"Esta versión ha sido generada durante el desarrollo del trabajo fin de grado", "datePublished":"Tue May 10 19:23:29 CEST 2022", "author":[{"@type":"Person","name":"Marian Martín Blázquez - Universidad Politécnica de Madrid"},{"@type":"Person","name":"Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico","name":"Vocabulario para la representación del Alumbrado Público", "headline":"Esta versión ha sido generada durante el desarrollo del trabajo fin de grado", "datePublished":"Thu May 12 17:22:37 CEST 2022", "author":[{"@type":"Person","name":"Marian Martín Blázquez - Universidad Politécnica de Madrid"},{"@type":"Person","name":"Oscar Corcho García (Ontology Engineering Group - Universidad Politécnica de Madrid)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -94,6 +94,7 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/">esadm de la iniciativa ciudades abiertas</a></li>
    <li><a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal/">esdir de la iniciativa ciudades abiertas</a></li>
    <li><a href="http://www.opengis.net/ont/geosparql#">geosparql</a>
+   <li><a href="https://github.com/smart-data-models/dataModel.Streetlighting/tree/6e8080344a857e0ddf291c308cab1c4aa2969452">Smart data models de FI-WARE sobre el alumbrado</a></li>
 </ul>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Declaraci&oacute;n de namespaces</h3>
@@ -105,14 +106,15 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
 <tr><td></td><td></td></tr>
 <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
 <tr><td><b>direccion-postal</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal&gt;</td></tr>
-<tr><td><b>alumbrado-publico</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico&gt;</td></tr>
+<tr><td><b>alumbrado-publico</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico&gt;</td></tr>
+<tr><td><b>alumbrado-publicokos</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico&gt;</td></tr>
 <tr><td><b>equipamiento-municipal</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
 <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
 <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
 <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/spec/geosparql&gt;</td></tr>
-<tr><td><b>esadm</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio&gt;</td></tr>
+<tr><td><b>territorio</b></td><td>&lt;http://vocab.linkeddata.es/def/sector-publico/territorio&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
 <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
 <tr><td><b>esequip</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal&gt;</td></tr>
@@ -131,8 +133,8 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
 <h4>Clases</h4>
 <ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
-      <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-         title="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">Barrio</a>
+      <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio"
+         title="http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio">Barrio</a>
    </li>
    <li>
       <a href="#Caja"
@@ -147,8 +149,8 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
-         title="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">Distrito</a>
+      <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito"
+         title="http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito">Distrito</a>
    </li>
    <li>
       <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"
@@ -284,18 +286,8 @@ Esta versión ha sido generada durante el desarrollo del trabajo fin de grado</s
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#anchura">anchura</a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
-         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
-         <span>barrio</span>
-      </a>
-   </li>
-   <li>
       <a href="#consumo"
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#consumo">consumo</a>
-   </li>
-   <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito"
-         title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">distrito</a>
    </li>
    <li>
       <a href="#fabricante"
@@ -446,9 +438,9 @@ Con la finalidad de facilitar la comprensión del uso de algunas clases y propie
       schema:streetAddress "CALLE DE LAS ERAS 3"^^xsd:string;
       schema:locality "Madrid"^^xsd:string;
       schema:country "España"^^xsd string;
-      esadm:distrito "http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/distrito/Hortaleza";
-      esadm:barrio "http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/barrio/4";
-      esalumb:tipoLampara "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-lampara/descarga";
+      esadm:distrito &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/distrito/Hortaleza&#62;;
+      esadm:barrio &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/barrio/4&#62;;
+      esalumb:tipoLampara &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-lampara/descarga&#62;;
       esequip:modeloBombilla "LBE002"^^xsd:string;
       geo:Lat "4480670.67020000000"^^xsd:double;
       geo:Lon "445648.48120000000"^^xsd:double;
@@ -464,8 +456,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
    <h3 id="classes-headline" class="list">Clases</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-            title="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">Barrio</a>
+         <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio"
+            title="http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio">Barrio</a>
       </li>
       <li>
          <a href="#Caja"
@@ -480,8 +472,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
-            title="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">Distrito</a>
+         <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito"
+            title="http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito">Distrito</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento"
@@ -522,33 +514,19 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://www.opengis.net/spec/geosparql/SpatialObject">SpatialObject</a>
       </li>
    </ul>
-   <div class="entity" id="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">
+   <div class="entity" id="http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio">
       <h3>Barrio<sup class="type-c" title="clase">c</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio</p>
       <div class="comment">
          <span class="markdown">Subdivisión con identidad propia de una ciudad o pueblo</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-      </dl>
-      <dl class="description">
-         <dt>en dominio de</dt>
-         <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">barrio</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">barrio</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="Caja">
@@ -592,7 +570,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
@@ -648,31 +625,19 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">
+   <div class="entity" id="http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito">
       <h3>Distrito<sup class="type-c" title="clase">c</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito</p>
+      <div class="comment">
+         <span class="markdown">Parte en que se divide una población, un territorio u otro lugar con fines administrativos o jurídicos</span>
+      </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-      </dl>
-      <dl class="description">
-         <dt>en dominio de</dt>
-         <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">distrito</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>
-         </dd>
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio/distrito"
-               title="http://vocab.linkeddata.es/def/secctor-public/territorio/distrito">distrito</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento">
@@ -684,7 +649,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento</p>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
@@ -776,7 +740,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
          <dt>tiene superclases</dt>
@@ -797,6 +760,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://www.opengis.net/spec/geosparql/hasGeometry">has geometry</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">Geometry</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://www.opengis.net/spec/geosparql/Geometry">
@@ -811,7 +779,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
@@ -831,6 +798,11 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             <a href="#http://www.opengis.net/spec/geosparql/hasGeometry"
                title="http://www.opengis.net/spec/geosparql/hasGeometry">has geometry</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#http://www.opengis.net/spec/geosparql/Feature" title="http://www.opengis.net/spec/geosparql/Feature">Feature</a>
+            <sup class="type-c" title="clase">c</sup>
          </dd>
       </dl>
    </div>
@@ -950,7 +922,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
          <dt>tiene subclases</dt>
@@ -1017,7 +988,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <dl class="description">
@@ -1113,7 +1083,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1146,16 +1115,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
                   title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
                <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-                  title="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">Barrio</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">Propiedad de datos</a>
             </dd>
          </dl>
       </div>
@@ -1202,12 +1161,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
-            <dt>rango</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
-                  title="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">Distrito</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
          </dl>
       </div>
    </div>
@@ -1221,10 +1174,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-      </dl>
       <div class="description">
          <dl>
             <dt>dominio</dt>
@@ -1499,18 +1448,8 @@ Cada luminaria tiene una lámpara</span>
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#anchura">anchura</a>
       </li>
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
-            <span>barrio</span>
-         </a>
-      </li>
-      <li>
          <a href="#consumo"
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#consumo">consumo</a>
-      </li>
-      <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">distrito</a>
       </li>
       <li>
          <a href="#fabricante"
@@ -1623,7 +1562,6 @@ Cada luminaria tiene una lámpara</span>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1653,7 +1591,6 @@ Cada luminaria tiene una lámpara</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
@@ -1774,28 +1711,6 @@ Cada luminaria tiene una lámpara</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">
-      <h3>barrio<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio</p>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio"
-                  title="http://vocab.linkeddata.es/def/secctor-public/territorio#Barrio">Barrio</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>también definida por</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">Propiedad entre objetos</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="consumo">
       <h3>consumo<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -1816,24 +1731,6 @@ Cada luminaria tiene una lámpara</span>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">
-      <h3>distrito<sup class="type-dp" title="Propiedad de datos">dp</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito</p>
-      <div class="description">
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito"
-                  title="http://vocab.linkeddata.es/def/secctor-public/territorio#Distrito">Distrito</a>
-               <sup class="type-c" title="clase">c</sup>
             </dd>
          </dl>
       </div>
@@ -1890,7 +1787,6 @@ Cada luminaria tiene una lámpara</span>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1922,7 +1818,6 @@ Cada luminaria tiene una lámpara</span>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1953,7 +1848,6 @@ Cada luminaria tiene una lámpara</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
@@ -2086,6 +1980,12 @@ Cada luminaria tiene una lámpara</span>
                <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://www.opengis.net/spec/geosparql/Point">point</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -2105,6 +2005,12 @@ Cada luminaria tiene una lámpara</span>
             <dd>
                <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://www.opengis.net/spec/geosparql/Point">point</a>
                <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
             </dd>
          </dl>
       </div>
@@ -2331,7 +2237,6 @@ Cada luminaria tiene una lámpara</span>
          <strong>IRI:</strong> http://schema.org/streetAddress</p>
       <dl class="definedBy">
          <dt>Definida por</dt>
-         <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
       </dl>
       <div class="description">
