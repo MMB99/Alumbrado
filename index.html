@@ -418,7 +418,7 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       geo:Lat "4480670.67020000000"^^xsd:double;
       geo:Lon "445648.48120000000"^^xsd:double;
    </code>
@@ -441,7 +441,7 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       esequip:id "1"^^xsd:string;
       esalumb:anchura "3"^^xsd:string;
       esalumb:altura "6"^^xsd:string;
@@ -471,7 +471,7 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       esalumb:codigo "11116178"^^xsd:string;
       schema:streetAddress "CALLE DE GOMEZNARRO 54"^^xsd:string;
       schema:locality "Madrid"^^xsd:string;
@@ -502,7 +502,7 @@ la clase <a href="#Lampara"title="http://vocab.linkeddata.es/datosabiertos/def/u
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       esalumb:tipoSoporte &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-soporte/poste&#62;;
       esalumb:tipoLampara &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-lampara/led&#62;;
       esalumb:tipoLuminaria &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-luminaria/proyector&#62;;
@@ -526,7 +526,7 @@ la segunda <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infr
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       esalumb:codigo "2023"^^xsd:string;
       esalumb:tipoAlimentacion &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-alimentacion/subterranea&#62;;
       esalumb:tipoIluminacion &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-iluminacion/permanente&#62;;
@@ -554,16 +554,16 @@ Con la finalidad de facilitar la comprensión del uso de algunas clases y propie
    A parte de la clase <a href="#Farola" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">esalumb:Farola</a> se reutilizan otras clases:
    <ul>
    <li> Para la representación de los puntos en los que están las farolas en términos de longitud y latitud, se ha reutilizado las clases <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Feature">geosparql:Feature</a>, <a href="https://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject">geosparql:SpatialObject</a>, 
-   <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Geometry">geosparql:Geometry</a> y <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a> del vocabulario <a href="https://www.opengis.net/doc/IS/geosparql/1.0#">geosparql</a> siguiendo el "Patrón de localización" de la figura 1.</li>
-   <li> Para la representación de los territorios en términos de barrio y distrito se han reutilizado los vocabularios <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal">esdir:DireccionPostal</a> y <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a> siguiendo el "Territorio administrativo" de la figura 1</li>
-   <li>Para la representación de su localización de ha reutilizado la clase <a href="https://schema.org/PostalAddress">schema:PostalAddress</a> del vocabulario <a href="https://schema.org">schema</a> siguiendo el patrón de "schema" de la figura 1. </li>
+   <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Geometry">geosparql:Geometry</a> y <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a> del vocabulario <a href="https://www.opengis.net/doc/IS/geosparql/1.0#">geosparql</a> siguiendo el "Patrón de localización" de la figura 2.</li>
+   <li> Para la representación de los territorios en términos de barrio y distrito se han reutilizado los vocabularios <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal">esdir:DireccionPostal</a> y <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a> siguiendo el "Territorio administrativo" de la figura 4</li>
+   <li>Para la representación de su localización de ha reutilizado la clase <a href="https://schema.org/PostalAddress">schema:PostalAddress</a> del vocabulario <a href="https://schema.org">schema</a> siguiendo el patrón de "schema" de la figura 2. </li>
    </ul>
 
 </p>
 
 <pre> 
    <code> 
-      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      &#60;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola&#62; a esalumb:Farola;
       esalumb:codigo "20040016"^^xsd:string;
       schema:streetAddress "CALLE DE LAS ERAS 3"^^xsd:string;
       schema:locality "Madrid"^^xsd:string;
