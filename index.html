@@ -412,6 +412,18 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
    <figcaption>Figura 2.- Geolocalización de las farolas usando el patrón Geo</figcaption>
 </center>
 
+<p> 
+  A continuación se muestra un ejemplo de geolocalización con los atributos de <a href="#http://www.opengis.net/spec/geosparql/Latitude" title="http://www.opengis.net/spec/geosparql/Latitude">Latitude</a> y <a href="#http://www.opengis.net/spec/geosparql#Longitude" title="http://www.opengis.net/spec/geosparql#Longitude">Longitude</a> que pertenecen a la clase <b>Point</b>.
+</p>
+
+<pre> 
+   <code> 
+      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      geo:Lat "4480670.67020000000"^^xsd:double;
+      geo:Lon "445648.48120000000"^^xsd:double;
+   </code>
+</pre>
+
 <h3> 3.2 Patrón Equipamiento
    <span class="backlink"> Volver a <a href="#toc">índice</a>
    </span>   
@@ -424,6 +436,19 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
    <figcaption>Figura 3.- Diagrama del equipamiento de las farolas </figcaption>
 </center>
 
+<p>A continuación se muestra un ejemplo con atributos de la clase <b>Equipamiento</b> y de la clase <b>Farola</b>.</p>
+<p>En este caso de la clase que representa el equipamiento municipal tenemos el identificador único que tiene cada farola. Por parte de la clase farola tenemos tres atributos: la altura máxima de la farola, su anchura desde una luminaria hasta su opuesta y el gabinete de control desde el que se controlan las farolas.</p>
+
+<pre> 
+   <code> 
+      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      esequip:id "1"^^xsd:string;
+      esalumb:anchura "3"^^xsd:string;
+      esalumb:altura "6"^^xsd:string;
+      esalumb:gabineteDeControl "Caseta de Camineros "^^xsd:string;
+   </code>
+</pre>
+
 <h3> 3.3 Patrón para la ubicación con Territorio administrativo y con schema
    <span class="backlink"> Volver a <a href="#toc">índice</a>
    </span>   
@@ -431,7 +456,7 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
 <p>El patrón de territorio administrativo está formado por el vocabulario esdir y el patrón schema está formado por el vocabulario schema.</p>
 <p>La clase de <a href="#Farola" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">esalumb:Farola</a> está relacionada con la clase <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal">DireccionPostal</a> a través de la propiedad
 <a href="#http://schema.org/address" title="http://schema.org/address">address</a>.</p>
-<p>La clase DireccionPostal tiene dos propiedades <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">barrio</a> y <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito"title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">distrito</a>, definidas por el vocabulario esadm, que se relacionan con las clases
+<p>La clase DireccionPostal tiene dos propiedades <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio"title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/barrio">barrio</a> y <a href="#http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito"title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/distrito">distrito</a>, definidas por el vocabulario <b>esadm</b>, que se relacionan con las clases
 <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio"title="http://vocab.linkeddata.es/def/sector-publico/territorio#Barrio">Barrio</a> y <a href="#http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito"title="http://vocab.linkeddata.es/def/sector-publico/territorio#Distrito">Distrito</a> que hacen referencia a el barrio y el distrito en el que se encuentra la farola.</p>
 <p>La clase DireccionPostal es subclase de la clase <a href="#http://schema.org#PostalAddress" title="http://schema.org#PostalAddress">PostalAddress</a> definida por el vocabulario schema y que tiene como atributos <a href="#http://schema.org/streetAddress" title="http://schema.org/streetAddress">streetAddress</a> que hace referencia al nombre de la calle completo incluyendo el número y el tipo de vía en el que se encuentra la farola, <a href="#http://schema.org/addressCountry" title="http://schema.org/addressCountry">addressCountry</a> que hace referencia a el país en el que se encuentra la farola y <a href="#http://schema.org/addressLocality" title="http://schema.org/addressLocality">addressLocality</a> que hacer referencia a la localidad en la que se encuentra la farola.</p>
 
@@ -440,11 +465,27 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
    <figcaption>Figura 4.- Ubicación de las farolas usando los patrones Territorio administrativo y schema </figcaption>
 </center>
 
+<p>A continuación se muestra un ejemplo con atributos de la clase <b>DireccionPostal</b>, <b>PostalAddress</b>, <b>Barrio</b> y <b>Distrito</b>.</p>
+<p>La clase Barrio representa el barrio en el que está ubicado la farola. La clase Distrito representa el distrito en el que la farola está ubicada. La clase PostalAddress tiene 3 atributos: el primero streetAddres hace referencia a la calle completa en la que está la farola, el segundo atributo addressLocality hace referencia a la localidad en la que está la farola y el último atributo addressCountry hace referencia el país en el que se encuentra la farola.</p>
+
+
+<pre> 
+   <code> 
+      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      esalumb:codigo "11116178"^^xsd:string;
+      schema:streetAddress "CALLE DE GOMEZNARRO 54"^^xsd:string;
+      schema:locality "Madrid"^^xsd:string;
+      schema:country "España"^^xsd string;
+      esadm:distrito &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/distrito/Hortaleza&#62;;
+      esadm:barrio &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/barrio/3&#62;;
+   </code>
+</pre>
+
 <h3> 3.4 Descripción de la farola
    <span class="backlink"> Volver a <a href="#toc">índice</a>
    </span>   
 </h3>
-<p>La clase <a href="#Farola" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">esalumb:Farola</a> se relaciona con las partes que la componen a través de las propiedades <a href="#caja"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja">caja</a>,<a href="#poste"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#poste">poste</a> y <a href="#luminaria"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#luminaria">luminaria</a>.
+<p>La clase <a href="#Farola" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola">esalumb:Farola</a> se relaciona con las partes que la componen a través de las propiedades <a href="#caja"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#caja">caja</a>, <a href="#poste"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#poste">poste</a> y <a href="#luminaria"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#luminaria">luminaria</a>.
 La lámpara se relaciona con la luminaria a través de la propiedad <a href="#tieneLampara"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#tieneLampara">tieneLampara</a></a>.</p>
 <p>También podemos ver como las clases tienen unas listas skos, la clase <a href="#Caja"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Caja">Caja</a> tiene la lista skos para representar los distintos tipos de cable que se pueden usar <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable"title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoCable">tipoCable</a>,
 la clase <a href="#Poste"title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Poste">Poste</a> tiene la lista skos para representar los distintos tipos de soporte que puede tener <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte"title="http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipoSoporte">tipoSoporte</a>,
@@ -455,6 +496,19 @@ la clase <a href="#Lampara"title="http://vocab.linkeddata.es/datosabiertos/def/u
    <img src="resources/images/partes Farola.png"width="900" heigh="500">
    <figcaption>Figura 5.- Descripción de los componentes que forman una farola </figcaption>
 </center>
+
+<p>A continuación en este ejemplo tenemos sobretodo el uso de listas skos y de la clase <b>Luminaria</b>.</p>
+<p>Tenemos una lista skos tipoSoporte para la representación de los distintos tipos de soporte que puede tener una farola, otra lista tipoLampara que representa los disitntos tipos de lámpara que puede tener una farola y la última lista tipoLuminaria que representa los distintos tipos de luminaria que puede tener una farola. También tenemos un atributo que representa el número de luminarias que tiene la farola.</p>
+
+<pre> 
+   <code> 
+      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      esalumb:tipoSoporte &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-soporte/poste&#62;;
+      esalumb:tipoLampara &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-lampara/led&#62;;
+      esalumb:tipoLuminaria &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-luminaria/proyector&#62;;
+      esalumb:numeroDeLuminarias "1"^^xsd:string;
+   </code>
+</pre>
 
 <h3> 3.5 Descripción de las listas skos de la farola
    <span class="backlink"> Volver a <a href="#toc">índice</a>
@@ -467,6 +521,18 @@ la segunda <a href="#http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infr
    <img src="resources/images/listas skos.png"width="500" heigh="300">
    <figcaption>Figura 6.- Descripción las listas skos de la farola </figcaption>
 </center>
+
+<p>A continuación en este ejemplo se puede ver el uso de los tres tipos de listas skos que tiene la clase <b>Farola</b>.</p>
+
+<pre> 
+   <code> 
+      http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
+      esalumb:codigo "2023"^^xsd:string;
+      esalumb:tipoAlimentacion &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-alimentacion/subterranea&#62;;
+      esalumb:tipoIluminacion &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-iluminacion/permanente&#62;;
+      esalumb:tipoAlumbrado &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-alumbrado/s1&#62;;
+   </code>
+</pre>
 
 <h3> 3.6 Ejemplos de uso
    <span class="backlink"> Volver a <a href="#toc">índice</a>
@@ -490,7 +556,7 @@ Con la finalidad de facilitar la comprensión del uso de algunas clases y propie
    <li> Para la representación de los puntos en los que están las farolas en términos de longitud y latitud, se ha reutilizado las clases <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Feature">geosparql:Feature</a>, <a href="https://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject">geosparql:SpatialObject</a>, 
    <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Geometry">geosparql:Geometry</a> y <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a> del vocabulario <a href="https://www.opengis.net/doc/IS/geosparql/1.0#">geosparql</a> siguiendo el "Patrón de localización" de la figura 1.</li>
    <li> Para la representación de los territorios en términos de barrio y distrito se han reutilizado los vocabularios <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal">esdir:DireccionPostal</a> y <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a> siguiendo el "Territorio administrativo" de la figura 1</li>
-   <li>Para la representación de su localización de ha reutilizado la clase <a href="https://schema.org/PostalAddress">schema:PostalAddress</a> del vocabulario <a href="https://schema.org">schema</a> siguiendo el patrón de "schema" de la figura 1 </li>
+   <li>Para la representación de su localización de ha reutilizado la clase <a href="https://schema.org/PostalAddress">schema:PostalAddress</a> del vocabulario <a href="https://schema.org">schema</a> siguiendo el patrón de "schema" de la figura 1. </li>
    </ul>
 
 </p>
@@ -498,14 +564,14 @@ Con la finalidad de facilitar la comprensión del uso de algunas clases y propie
 <pre> 
    <code> 
       http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#Farola" a esalumb:Farola;
-      esalumb "20040016"^^xsd:string;
+      esalumb:codigo "20040016"^^xsd:string;
       schema:streetAddress "CALLE DE LAS ERAS 3"^^xsd:string;
       schema:locality "Madrid"^^xsd:string;
       schema:country "España"^^xsd string;
       esadm:distrito &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/distrito/Hortaleza&#62;;
       esadm:barrio &#60;http://vocab.linkeddata.es/madrid/recurso/sector-publico/territorio/barrio/4&#62;;
       esalumb:tipoLampara &#60;http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/alumbrado-publico/tipo-lampara/descarga&#62;;
-      esequip:modeloBombilla "LBE002"^^xsd:string;
+      esalumb:modeloBombilla "LBE002"^^xsd:string;
       geo:Lat "4480670.67020000000"^^xsd:double;
       geo:Lon "445648.48120000000"^^xsd:double;
    </code>
