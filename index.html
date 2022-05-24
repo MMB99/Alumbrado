@@ -314,10 +314,10 @@ $(function(){
          title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#intensidadLuminica">intensidadLuminica</a>
    </li>
    <li>
-      <a href="#http://www.opengis.net/spec/geosparql/Latitude" title="http://www.opengis.net/spec/geosparql/Latitude">Latitude</a>
+      <a href="#http://www.opengis.net/spec/geosparql/lat" title="http://www.opengis.net/spec/geosparql/lat">lat</a>
    </li>
    <li>
-      <a href="#http://www.opengis.net/spec/geosparql#Longitude" title="http://www.opengis.net/spec/geosparql#Longitude">Longitude</a>
+      <a href="#http://www.opengis.net/spec/geosparql#long" title="http://www.opengis.net/spec/geosparql#long">long</a>
    </li>
    <li>
       <a href="#material"
@@ -406,7 +406,7 @@ $(function(){
 </h3>
 <p>La clase <a href="#Equipameinto" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento">esequip:Equipamiento</a> es subclase de la clase <a href="https://www.opengis.net/doc/IS/geosparql/1.0#Feature">geosparql:Feature</a> que forma parte del patrón de datos geoespaciales.</p>
 <p>El patrón de datos geoespaciales utiliza los vocabularios geo y geosparql. Para poder obtener la geolocalización de un equipamiento (por ejemplo, una farola) se utiliza la propiedad de objeto <a href="#http://www.opengis.net/spec/geosparql/hasGeometry" title="http://www.opengis.net/spec/geosparql/hasGeometry">geosparql:has geometry</a> que se relaciona con la clase <a href="#http://www.opengis.net/spec/geosparql/Geometry" title="http://www.opengis.net/spec/geosparql/Geometry">geosparql:Geometry</a>.
-La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://www.opengis.net/spec/geosparql/Point">geosparql:Point</a> es subclase de la clase geosparql:Geometry y tiene como atributos a la latitud (<a title="http://www.opengis.net/spec/geosparql/Latitude"> geo:lat</a>) y longitud (<a title="http://www.opengis.net/spec/geosparql/Longitude">long</a>).
+La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://www.opengis.net/spec/geosparql/Point">geosparql:Point</a> es subclase de la clase geosparql:Geometry y tiene como atributos a la latitud (<a title="http://www.opengis.net/spec/geosparql/lat"> geo:lat</a>) y longitud (<a title="http://www.opengis.net/spec/geosparql/long">long</a>).
 </p>
 
 <center> 
@@ -415,7 +415,7 @@ La clase <a href="#http://www.opengis.net/spec/geosparql/Point" title="http://ww
 </center>
 
 <p> 
-   A continuación se muestra un ejemplo de geolocalización con los atributos de <a href="#http://www.opengis.net/spec/geosparql/Latitude" title="http://www.opengis.net/spec/geosparql/Latitude">geo:lat</a> y <a href="#http://www.opengis.net/spec/geosparql#Longitude" title="http://www.opengis.net/spec/geosparql#Longitude">geo:long</a>.
+   A continuación se muestra un ejemplo de geolocalización con los atributos de <a href="#http://www.opengis.net/spec/geosparql/lat" title="http://www.opengis.net/spec/geosparql/lat">geo:lat</a> y <a href="#http://www.opengis.net/spec/geosparql#long" title="http://www.opengis.net/spec/geosparql#long">geo:long</a>.
  </p>
  
  <pre> 
@@ -1059,8 +1059,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dd>
          <dt>en dominio de</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/Latitude" title="http://www.opengis.net/spec/geosparql/Latitude">Latitude</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://www.opengis.net/spec/geosparql#Longitude" title="http://www.opengis.net/spec/geosparql#Longitude">Longitude</a>
+            <a href="#http://www.opengis.net/spec/geosparql/lat" title="http://www.opengis.net/spec/geosparql/lat">lat</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#http://www.opengis.net/spec/geosparql#long" title="http://www.opengis.net/spec/geosparql#long">long</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
       </dl>
@@ -1663,10 +1663,10 @@ Cada luminaria tiene una lámpara</span>
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico#intensidadLuminica">intensidadLuminica</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/Latitude" title="http://www.opengis.net/spec/geosparql/Latitude">Latitude</a>
+         <a href="#http://www.opengis.net/spec/geosparql/lat" title="http://www.opengis.net/spec/geosparql/lat">lat</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql#Longitude" title="http://www.opengis.net/spec/geosparql#Longitude">Longitude</a>
+         <a href="#http://www.opengis.net/spec/geosparql#long" title="http://www.opengis.net/spec/geosparql#long">long</a>
       </li>
       <li>
          <a href="#material"
@@ -2177,13 +2177,13 @@ Cada luminaria tiene una lámpara</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql/Latitude">
-      <h3>Latitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
+   <div class="entity" id="http://www.opengis.net/spec/geosparql/lat">
+      <h3>lat<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/Latitude</p>
+         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/lat</p>
       <div class="comment">
          <span class="markdown">La latitud WGS84 de un SpatialThing</span>
       </div>
@@ -2207,13 +2207,13 @@ Cada luminaria tiene una lámpara</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql#Longitude">
-      <h3>Longitude<sup class="type-dp" title="Propiedad de datos">dp</sup>
+   <div class="entity" id="http://www.opengis.net/spec/geosparql#long">
+      <h3>long<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql#Longitude</p>
+         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql#long</p>
       <div class="comment">
          <span class="markdown">La longitud WGS84 para un SpatialThing</span>
       </div>
@@ -2708,8 +2708,11 @@ Como se puede dar el caso en el que haya brazos a distintas alturas y que cada a
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">Referencias <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
-<span class="markdown">A&ntilde;ade aqu&iacute; tus referencias, a ser posible en una lista.</span>
-
+<span class="markdown">El vocabulario del alumbrado público se ha podido formalizar a partir de la reutilización de modelos y vocabularios.</span>
+<ul>
+   <li><a href="https://github.com/smart-data-models/dataModel.Streetlighting/tree/6e8080344a857e0ddf291c308cab1c4aa2969452">Smart data models de FI-WARE sobre el alumbrado</a></li>
+   <p><li><a href="https://ci.mines-stetienne.fr/seas/StreetLightSystemOntology">SEAS </a> es una ontología que describe el sistema eléctrico de las farolas</p></li>
+</ul>
 </div>
    
 
