@@ -77,7 +77,7 @@ $(function(){
 </div>     <div id="abstract"><h2>S&iacute;ntesis</h2><span class="markdown"> </span>
 <p>Este vocabulario permite representar los datos relacionados con el alumbrado público, incluyendo datos relacionados con farolas, luminarias, lámparas, postes y cajas de alumbrado.
 Ha sido desarrollado en el contexto de la iniciativa <a href="https://github.com/opencitydata">OpenCityData</a>.</p>
-<p>Una primera versión de este vocabulario fue creada en el contexto del día internacional de los datos abiertos. Esta nueva versión tiene en cuenta los resultados obtenidos en esa primera versión del vocabulario, los problemas identificados en su utilización y los avances realizados en los últimos años en la propuesta de patrones de diseño de ontologías para ciudades y en modelos como el propuesto por FI-WARE. Esta versión actualizada del vocabulario ha sido generada durante el desarrollo de un trabajo fin de grado en la Escuela Técnica Superior de Ingenieros Informáticos de la Universidad Politécnica de Madrid.</p>	
+<p>Una primera versión de este vocabulario fue creada en el contexto del día internacional de los datos abiertos. Esta nueva versión tiene en cuenta los resultados obtenidos en esa primera versión del vocabulario, los problemas identificados en su utilización y los avances realizados en los últimos años en la propuesta de patrones de diseño de ontologías para ciudades y en modelos como el propuesto por FI-WARE. Esta versión actualizada del vocabulario ha sido generada durante el desarrollo de un trabajo fin de grado en la Escuela Técnica Superior de Ingenieros Informáticos de la Universidad Politécnica de Madrid.</p>
 </div>
 <div id="toc"></div> 
 
@@ -440,7 +440,7 @@ title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/e
 </center>
 
 <p>A continuación se muestra un ejemplo con atributos de la clase <b>Equipamiento</b> y de la clase <b>Farola</b>, para describir una farola</p>
-<p>En este caso de la clase que representa el equipamiento municipal tenemos el identificador único que tiene cada farola. Por parte de la clase farola tenemos tres atributos: la altura máxima de la farola, su anchura desde una luminaria hasta su opuesta y el gabinete de control desde el que se controlan las farolas.</p>
+<p>En este caso la clase que representa el equipamiento municipal tiene un identificador único que tiene cada farola. Por parte de la clase farola tenemos tres atributos: la altura máxima de la farola, su anchura desde una luminaria hasta su opuesta y el gabinete de control desde el que se controlan las farolas.</p>
 
 <pre> 
    <code> 
@@ -806,6 +806,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento</p>
+         <div class="comment">
+            <span class="markdown">Permite describir los equipamientos municipales</span>
+         </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
@@ -1326,6 +1329,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </h3>
       <p>
          <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/hasGeometry</p>
+         <div class="comment">
+            <span class="markdown">Relación entre la clase Feature y la clase Geometry</span>
+         </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
@@ -1400,12 +1406,15 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </div>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/def/secctor-public/territorio/distrito">
-      <h3>Relacióne entre la clase DireccionPostal y la clase Distrito<sup class="type-op" title="Propiedad entre objetos">op</sup>
+      <h3>distrito<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/def/secctor-public/territorio/distrito</p>
+         <div class="comment">
+            <span class="markdown">Relación entre la clase DireccionPostal y la clase Distrito</span>
+         </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/alumbrado-publico</dd>
@@ -2132,7 +2141,7 @@ Cada luminaria tiene una lámpara</span>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal/identifier</p>
       <div class="comment">
-         <span class="markdown">id de la faroal</span>
+         <span class="markdown">identificador de la farola</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
